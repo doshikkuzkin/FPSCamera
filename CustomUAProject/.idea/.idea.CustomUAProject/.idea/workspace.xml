@@ -22,6 +22,8 @@
     <list default="true" id="c4c9dc58-982a-407d-adea-3f963e7f7479" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FPSMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPSMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FPS.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FPS.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602673530831</updated>
       <workItem from="1602673545602" duration="18000" />
-      <workItem from="1602673570317" duration="4377000" />
+      <workItem from="1602673570317" duration="6089000" />
     </task>
     <servers />
   </component>
