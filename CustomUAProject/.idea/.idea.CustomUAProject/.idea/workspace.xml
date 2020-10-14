@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c9dc58-982a-407d-adea-3f963e7f7479" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPSMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPSMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FPS.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FPS.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
