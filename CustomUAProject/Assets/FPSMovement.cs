@@ -96,8 +96,6 @@ public class FPSMovement : MonoBehaviour
                 horizontalAxis = "AD";
                 break;
         }
-        
-
     }
 }
 
