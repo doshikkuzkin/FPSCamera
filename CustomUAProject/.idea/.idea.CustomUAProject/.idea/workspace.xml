@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c9dc58-982a-407d-adea-3f963e7f7479" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FPS.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FPS.unity" afterDir="false" />
     </list>
@@ -31,11 +32,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/ColorableEditor.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/FPSMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/AssignRenderTexture.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/MyMenuItems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/ColorableEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/ColorableObject.cs" />
       </list>
     </option>
   </component>
@@ -81,6 +88,11 @@
       <updated>1602673530831</updated>
       <workItem from="1602673545602" duration="18000" />
       <workItem from="1602673570317" duration="6089000" />
+      <workItem from="1603096069021" duration="12000" />
+      <workItem from="1603096089249" duration="2461000" />
+      <workItem from="1603098788938" duration="219000" />
+      <workItem from="1603099160123" duration="59000" />
+      <workItem from="1603099244317" duration="2442000" />
     </task>
     <servers />
   </component>
@@ -103,5 +115,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="432" y="226" key="RiderGenerateDialog" timestamp="1603099836659">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="432" y="226" key="RiderGenerateDialog/0.0.1440.900@0.0.1440.900" timestamp="1603099836659" />
   </component>
 </project>
