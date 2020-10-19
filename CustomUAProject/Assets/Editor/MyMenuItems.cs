@@ -28,8 +28,7 @@ namespace Editor
             var allObjects = FindObjectsOfType<ColorableObject>();
             foreach (var colorableObject in allObjects)
             {
-                var renderer = colorableObject.GetComponent<Renderer>();
-                renderer.sharedMaterial.color = color;
+                colorableObject.Color = color;
             }
         }
     }

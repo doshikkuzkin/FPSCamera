@@ -7,13 +7,29 @@ using UnityEngine.Serialization;
 public class ColorableObject : MonoBehaviour
 {
     [SerializeField] private Color color;
+    private bool isColor;
 
     public Color Color
     {
-        get => color;
+        get
+        {
+            CheckDefaultColor();
+            return color;
+        }
         set
         {
-            color = value;
+            CheckDefaultColor();
+            GetComponent<Renderer>().sharedMaterial.color = value;
         }
     }
+
+    private void CheckDefaultColor()
+    {
+        if (!isColor)
+        {
+            color = GetComponent<Renderer>().sharedMaterial.color;
+            isColor = true;
+        }
+    }
+
 }

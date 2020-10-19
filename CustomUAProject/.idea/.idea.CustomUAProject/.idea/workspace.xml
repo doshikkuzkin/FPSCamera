@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c9dc58-982a-407d-adea-3f963e7f7479" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CustomUAProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FPS.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FPS.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ColorableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ColorableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/ColorableEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/ColorableEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/MyMenuItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/MyMenuItems.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +41,8 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/FPSMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/AssignRenderTexture.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/MyMenuItems.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/ColorableEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/MyMenuItems.cs" />
         <option value="$PROJECT_DIR$/Assets/ColorableObject.cs" />
       </list>
     </option>
@@ -92,7 +93,7 @@
       <workItem from="1603096089249" duration="2461000" />
       <workItem from="1603098788938" duration="219000" />
       <workItem from="1603099160123" duration="59000" />
-      <workItem from="1603099244317" duration="2442000" />
+      <workItem from="1603099244317" duration="3409000" />
     </task>
     <servers />
   </component>

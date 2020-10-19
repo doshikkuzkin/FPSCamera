@@ -18,7 +18,7 @@ namespace Editor
             {
                 if (GUILayout.Button("Reset Color"))
                 {
-                    colorable.GetComponent<Renderer>().sharedMaterial.color = defaultColor;
+                    colorable.GetComponent<Renderer>().sharedMaterial.color = colorable.Color;
                 }
             }
         }
