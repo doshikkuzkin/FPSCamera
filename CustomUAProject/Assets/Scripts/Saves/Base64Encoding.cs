@@ -11,7 +11,7 @@ public class Base64Encoding : MonoBehaviour
 {
     private static readonly int MainTex = Shader.PropertyToID("_MainTex");
     
-    [MenuItem("Tools/ConvertToBase64")]
+    //[MenuItem("Tools/ConvertToBase64")]
     public static void ConvertToBase64()
     {
         string dataPath = Application.persistentDataPath;
@@ -36,7 +36,7 @@ public class Base64Encoding : MonoBehaviour
         //File.WriteAllBytes("SavesPractice/myBinaryAsset.asset", new byte[]{10, 20, 30, 40});
     }
 
-    [MenuItem("Tools/ArchiveDirectory")]
+    //[MenuItem("Tools/ArchiveDirectory")]
     public static void ArchiveDirectory()
     {
         //Add csc to use System.IO.Compression
@@ -48,7 +48,7 @@ public class Base64Encoding : MonoBehaviour
         //extract - ZipFile.ExtractToDirectory(file, directory)
     }
     
-    [MenuItem("Tools/LoadTexture")]
+    //[MenuItem("Tools/LoadTexture")]
     public static void LoadTexture()
     {
         byte[] textureData = File.ReadAllBytes("Road.jpg");
@@ -62,7 +62,7 @@ public class Base64Encoding : MonoBehaviour
         //material.EnableKeyword("_NORMALMAP");
     }
     
-    [MenuItem("Tools/CreateJSON")]
+    //[MenuItem("Tools/CreateJSON")]
     public static void CreateJSON()
     {
         MyData data = new MyData();
@@ -79,7 +79,7 @@ public class Base64Encoding : MonoBehaviour
         Debug.Log("Read " + readData.name + " data!");
     }
     
-    [MenuItem("Tools/WebRequest")]
+    //[MenuItem("Tools/WebRequest")]
     public static void WebRequest()
     {
         string uri = "https://dminsky.com/rock_normal.jpg";

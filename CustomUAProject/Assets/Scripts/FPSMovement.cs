@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Saves;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -21,6 +22,12 @@ public class FPSMovement : MonoBehaviour
     private string verticalAxis, horizontalAxis;
     public bool mouseActive = true;
 
+    public float MoveSpeed
+    {
+        get => moveSpeed;
+        set => moveSpeed = value;
+    }
+
     private void Awake()
     {
         _transform = transform;
@@ -33,7 +40,6 @@ public class FPSMovement : MonoBehaviour
         _cameraRot = _cameraTransform.rotation;
         _defaultZoom = _mainCamera.fieldOfView;
         _cutZoom = _defaultZoom / 2;
-        
     }
 
     private void Update()
