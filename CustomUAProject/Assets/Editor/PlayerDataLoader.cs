@@ -19,52 +19,76 @@ namespace Editor
             var uri = "https://dminsky.com/settings.zip";
             var jsonPath = Path.Combine(PersistentPath, "settings.json");
 
-            if (File.Exists(outPath))
+            try
             {
-                Debug.Log("Zip is already downloaded! Path: " + outPath);
-                LoadJson(jsonPath);
-            }
-            else
-            {
-                UnityWebRequest request = UnityWebRequest.Get(uri);
-                request.downloadHandler = new DownloadHandlerFile(outPath);
-                var asyncOp = request.SendWebRequest();
-                asyncOp.completed += (asyncOperation) =>
+                if (File.Exists(outPath))
                 {
-                    if (request.isHttpError || request.isNetworkError)
+                    Debug.Log("Zip is already downloaded! Path: " + outPath);
+                    UnpackArchive(outPath, jsonPath);
+                    LoadJson(jsonPath);
+                }
+                else
+                {
+                    UnityWebRequest request = UnityWebRequest.Get(uri);
+                    request.downloadHandler = new DownloadHandlerFile(outPath);
+                    var asyncOp = request.SendWebRequest();
+                    asyncOp.completed += (asyncOperation) =>
                     {
-                        Debug.Log("Error downloading file!");
-                    }
-                    else
-                    {
-                        Debug.Log("Archive loaded successfully! Path: " + outPath);
-                        UnpackArchive(outPath, jsonPath);
-                        LoadJson(jsonPath);
-                    }
-                };
+                        if (request.isHttpError || request.isNetworkError)
+                        {
+                            Debug.Log("Error downloading file!");
+                        }
+                        else
+                        {
+                            Debug.Log("Archive loaded successfully! Path: " + outPath);
+                            UnpackArchive(outPath, jsonPath);
+                            LoadJson(jsonPath);
+                        }
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                EditorUtility.DisplayDialog(ex.GetType().ToString(), ex.Message, "Ok");
+                Debug.Log(ex.StackTrace);
             }
         }
 
         private static void UnpackArchive(string path, string jsonPath)
         {
-            if (!File.Exists(jsonPath))
+            try
             {
-                ZipFile.ExtractToDirectory(path, PersistentPath);
-                Debug.Log("Archive extracted successfully!");
+                if (!File.Exists(jsonPath))
+                {
+                    ZipFile.ExtractToDirectory(path, PersistentPath);
+                    Debug.Log("Archive extracted successfully!");
+                }
+            }
+            catch (IOException ex)
+            {
+                EditorUtility.DisplayDialog(ex.GetType().ToString(), ex.Message, "Ok");
+                Debug.Log(ex.StackTrace);
             }
         }
 
         private static void LoadJson(string path)
         {
-            var jsonData = File.ReadAllText(path);
-            var loadedData = JsonUtility.FromJson<LoadedData>(jsonData);
-            if (loadedData != null)
+            try
             {
-                SetData(loadedData);
+                var jsonData = File.ReadAllText(path);
+                var loadedData = JsonUtility.FromJson<LoadedData>(jsonData);
+                if (loadedData != null)
+                {
+                    SetData(loadedData);
+                }
+                else
+                {
+                    Debug.Log("Error loading json file!");
+                }
             }
-            else
+            catch (FileNotFoundException ex)
             {
-                Debug.Log("Error loading json file!");
+                EditorUtility.DisplayDialog("Could not find file!", ex.Message, "Ok");
             }
         }
 
